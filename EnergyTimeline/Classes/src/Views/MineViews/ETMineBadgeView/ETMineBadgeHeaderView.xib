@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ETMineBadgeHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pma-6F-gpw">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="188"/>
+                    <state key="normal" image="mine_badgeWall"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的徽章" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPa-Sz-DjX">
+                    <rect key="frame" x="30" y="74.5" width="113.5" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQz-gG-Wvq">
+                    <rect key="frame" x="239" y="80" width="106" height="28"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="获得:-个" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6iE-oV-Wxb">
+                            <rect key="frame" x="49.5" y="7" width="46.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star_yellow" translatesAutoresizingMaskIntoConstraints="NO" id="4Pu-J6-nxX">
+                            <rect key="frame" x="10" y="4" width="20" height="20"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4Pu-J6-nxX" firstAttribute="centerY" secondItem="UQz-gG-Wvq" secondAttribute="centerY" id="N8H-Ft-9UR"/>
+                        <constraint firstAttribute="trailing" secondItem="6iE-oV-Wxb" secondAttribute="trailing" constant="10" id="PWV-jS-53Q"/>
+                        <constraint firstAttribute="width" constant="106" id="Pv5-rw-DVd"/>
+                        <constraint firstAttribute="height" constant="28" id="Q0L-r6-KfY"/>
+                        <constraint firstItem="6iE-oV-Wxb" firstAttribute="centerY" secondItem="UQz-gG-Wvq" secondAttribute="centerY" id="fvh-Cr-4oj"/>
+                        <constraint firstItem="4Pu-J6-nxX" firstAttribute="leading" secondItem="UQz-gG-Wvq" secondAttribute="leading" constant="10" id="oQ8-TE-oh3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.21176470588235294" green="0.21568627450980393" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uPa-Sz-DjX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="1Q6-9c-CgK"/>
+                <constraint firstItem="pma-6F-gpw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ezd-UI-Q3X"/>
+                <constraint firstAttribute="trailing" secondItem="UQz-gG-Wvq" secondAttribute="trailing" constant="30" id="Nuc-VI-TMz"/>
+                <constraint firstItem="OWw-VS-o36" firstAttribute="bottom" secondItem="pma-6F-gpw" secondAttribute="bottom" id="YmU-fR-0ic"/>
+                <constraint firstAttribute="bottom" secondItem="UQz-gG-Wvq" secondAttribute="bottom" constant="80" id="aUC-tG-fiI"/>
+                <constraint firstAttribute="bottom" secondItem="uPa-Sz-DjX" secondAttribute="bottom" constant="80" id="ddW-8n-uCy"/>
+                <constraint firstItem="pma-6F-gpw" firstAttribute="leading" secondItem="OWw-VS-o36" secondAttribute="leading" id="tyO-99-tRC"/>
+                <constraint firstItem="OWw-VS-o36" firstAttribute="trailing" secondItem="pma-6F-gpw" secondAttribute="trailing" id="vvW-HC-dkT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="OWw-VS-o36"/>
+            <connections>
+                <outlet property="badgeCountLabel" destination="6iE-oV-Wxb" id="Qog-12-m5B"/>
+                <outlet property="badgeCountView" destination="UQz-gG-Wvq" id="7IF-PZ-3wz"/>
+                <outlet property="badgeWall" destination="pma-6F-gpw" id="GhB-tU-wTy"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_badgeWall" width="375" height="188"/>
+        <image name="star_yellow" width="20" height="20"/>
+    </resources>
+</document>

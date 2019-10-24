@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="260" id="KGk-i7-Jjw" customClass="ETNoticeTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="259.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eO-gB-vlE">
+                        <rect key="frame" x="10" y="40" width="300" height="215"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每日PK点赞" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7S-Nm-0Cm">
+                                <rect key="frame" x="10" y="15" width="280" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="esg-zl-F90"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6k-MT-vfM">
+                                <rect key="frame" x="0.0" y="50" width="300" height="1"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="SIn-tb-3Tp"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDZ-tg-wha">
+                                <rect key="frame" x="10" y="66" width="280" height="134"/>
+                                <mutableString key="text">我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!我是小夏,刚刚在俯卧撑项目中超过了你,来跟我PK啊!</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="DDZ-tg-wha" firstAttribute="top" secondItem="H6k-MT-vfM" secondAttribute="bottom" constant="15" id="5Iq-vi-6pL"/>
+                            <constraint firstItem="H6k-MT-vfM" firstAttribute="top" secondItem="i7S-Nm-0Cm" secondAttribute="bottom" constant="15" id="7dj-zY-HBl"/>
+                            <constraint firstItem="DDZ-tg-wha" firstAttribute="leading" secondItem="8eO-gB-vlE" secondAttribute="leading" constant="10" id="8kL-CG-MB2"/>
+                            <constraint firstItem="i7S-Nm-0Cm" firstAttribute="leading" secondItem="8eO-gB-vlE" secondAttribute="leading" constant="10" id="BdO-xc-mLo"/>
+                            <constraint firstAttribute="bottom" secondItem="DDZ-tg-wha" secondAttribute="bottom" constant="15" id="GyA-7i-UlO"/>
+                            <constraint firstItem="i7S-Nm-0Cm" firstAttribute="top" secondItem="8eO-gB-vlE" secondAttribute="top" constant="15" id="SLa-iP-ReO"/>
+                            <constraint firstAttribute="trailing" secondItem="H6k-MT-vfM" secondAttribute="trailing" id="SYT-cP-6JI"/>
+                            <constraint firstAttribute="trailing" secondItem="i7S-Nm-0Cm" secondAttribute="trailing" constant="10" id="T7n-Hv-d0P"/>
+                            <constraint firstItem="H6k-MT-vfM" firstAttribute="leading" secondItem="8eO-gB-vlE" secondAttribute="leading" id="lat-yI-VjT"/>
+                            <constraint firstAttribute="trailing" secondItem="DDZ-tg-wha" secondAttribute="trailing" constant="10" id="mF9-Sp-HBh"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2000-01-01 00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xrE-xI-0tL">
+                        <rect key="frame" x="110.5" y="10" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="8Nn-oe-Uzv"/>
+                            <constraint firstAttribute="height" constant="20" id="x5f-hO-j5b"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <color key="textColor" red="0.34509803921568627" green="0.37254901960784315" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8eO-gB-vlE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="6WO-0Y-L73"/>
+                    <constraint firstAttribute="bottom" secondItem="8eO-gB-vlE" secondAttribute="bottom" constant="5" id="Wlx-u5-7rg"/>
+                    <constraint firstItem="8eO-gB-vlE" firstAttribute="top" secondItem="xrE-xI-0tL" secondAttribute="bottom" constant="10" id="kgF-1k-cka"/>
+                    <constraint firstItem="xrE-xI-0tL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="lo1-NG-jg2"/>
+                    <constraint firstAttribute="trailing" secondItem="8eO-gB-vlE" secondAttribute="trailing" constant="10" id="qOZ-Ll-JrU"/>
+                    <constraint firstItem="xrE-xI-0tL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vWc-QP-gYF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="8eO-gB-vlE" id="PU8-k1-9kR"/>
+                <outlet property="contentLabel" destination="DDZ-tg-wha" id="24a-gO-r3I"/>
+                <outlet property="lineView" destination="H6k-MT-vfM" id="0gZ-P6-p5t"/>
+                <outlet property="timeLabel" destination="xrE-xI-0tL" id="wCV-f0-2FM"/>
+                <outlet property="titleLabel" destination="i7S-Nm-0Cm" id="MeC-zq-TSK"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-21"/>
+        </tableViewCell>
+    </objects>
+</document>

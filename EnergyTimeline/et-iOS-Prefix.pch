@@ -1,0 +1,125 @@
+
+//  et-iOS-Prefix.pch
+//  EnergyTimeline
+//
+//  Created by vj on 2016/11/7.
+//  Copyright © 2016年 Weijie Zhu. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "ETConst.h"
+#import "UMMobClick/MobClick.h"
+
+#import "UIViewController+Swizzling.h"
+
+#ifdef __OBJC__
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <SDWebImage/UIButton+WebCache.h>
+#import "JKCategories.h"
+#import <ChameleonFramework/Chameleon.h>
+//#import <JSONModel/JSONModel.h>
+#import "MBProgressHUD.h"
+#import "HMSegmentedControl.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+
+#import "UMMobClick/MobClick.h"
+/** 自定义工具 */
+#import "ETHelpManager.h"
+#import "ETUserManager.h"
+#import "ETMacros.h"
+#import "ETColor.h"
+#import "MBProgressHUD+FastMethod.h"
+#import "UITableView+SectionCorner.h"
+
+#define MAS_SHORTHAND_GLOBALS // equalTo函数接收基本数据类型, 内部会对基本数据类型进行包装
+//#import <Masonry/Masonry.h>
+#import "Masonry.h"
+#import "MJRefresh.h"
+#endif
+
+
+
+#ifndef et_iOS_Prefix_pch
+#define et_iOS_Prefix_pch
+
+#define INTERFACE_URL @"http://172.16.0.222/"
+//#define INTERFACE_URL @"http://120.26.218.68:1111/"
+
+#define HTML_PostDetail @"Share/PostDetails"
+
+#define HTML_PKDetail @"Share/PkDetails"
+
+#define HTML_IntegralRule @"Share/IntegralRule"
+
+#define HTML_PrivacyPolicy @"Terms/PrivacyPolicy"
+
+#define HTML_PKProjectBadge @"Share/Badge"
+
+#define HTML_PKProjectPraise @"Share/Praise"
+
+#define HTML_PKPersonReport @"Share/PersonReport"
+
+/** logo */
+#define ETLogo @"app_logo_select"
+
+/** 用户默认头像 */
+#define ETUserPortrait_Default @"user_portrait_default"
+
+/** 用户默认PK封面 */
+#define ETUserPKCoverImg_Default @"pk_coverImg_default"
+
+/** 用户默认PK封面(小) */
+#define ETUserPKCoverImgLittle_Default @"pk_coverImg_little_default"
+
+/** 用户默认主页封面 */
+#define ETUserCoverImg_Default @"mine_coverImg_default"
+
+/** 图片加载图片 */
+#define ETImageLoading_Default @"image_loading"
+
+/** 用户头像占位图 */
+#define ETUserPortrait_PlaceHolderImage [UIImage imageNamed:ETUserPortrait_Default]
+
+/** 图片加载占位图 */
+#define ETImageLoading_PlaceHolderImage [UIImage imageNamed:ETImageLoading_Default]
+
+/** 指向左侧的灰色箭头 */
+#define ETLeftArrow_Gray @"back_gray"
+
+/** 指向左侧的白色箭头 */
+#define ETLeftArrow_White @"back_white"
+
+/** 指向下的白色箭头 */
+#define ETDownArrow_White @"recover_white"
+
+/** block防止循环引用 */
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
+/** boolean传值 */
+#define ETBOOL(BOOL) (BOOL ? @"true" : @"false")
+//#define ETBOOL(BOOL) (BOOL ? @"TRUE" : @"FALSE")
+
+
+#if (defined(CONFIGURATION_Debug) || defined(CONFIGURATION_AdHoc) || !defined CONFIGURATION_Release)
+#define ETLog(format, ...)  NSLog((@"FUNC:%s\n" "LINE:%d\n" format), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#define ETLog(format, ...)
+#endif
+
+// 多环境
+#if defined (CONFIGURATION_AdHoc) || defined (CONFIGURATION_Debug)
+// 测试服务器地址
+    #define REQUEST_URL @"aaabbb"
+
+#else
+// 正式服务器地址
+    #define REQUEST_URL @"cccddd"
+
+
+#endif
+
+#endif /* et_iOS_Prefix_pch */
+
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ETNoticeLikeListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oZ-mr-HDQ">
+                        <rect key="frame" x="88" y="10.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like_red" translatesAutoresizingMaskIntoConstraints="NO" id="PsH-FD-eKc">
+                        <rect key="frame" x="88" y="29.5" width="20" height="20"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f86-iR-jRV">
+                        <rect key="frame" x="88" y="53.5" width="17" height="7.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="6"/>
+                        <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帖子内容" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5O-MS-f3F">
+                        <rect key="frame" x="250" y="12.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="4SO-vc-qpO"/>
+                            <constraint firstAttribute="width" constant="50" id="X4s-Qb-8vk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.4823529412" green="0.4823529412" blue="0.4823529412" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lVY-vH-9WC">
+                        <rect key="frame" x="250" y="12.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="9ov-T3-fKG"/>
+                            <constraint firstAttribute="height" constant="50" id="ZIy-Dj-LGa"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8h-yh-cfV">
+                        <rect key="frame" x="20" y="10.5" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="Zzc-Sl-OpA"/>
+                            <constraint firstAttribute="width" constant="55" id="g0Y-M7-wa2"/>
+                        </constraints>
+                        <state key="normal" image="user_portrait_default"/>
+                        <connections>
+                            <action selector="homePage:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ibd-wI-X6w"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="M5O-MS-f3F" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="33w-Y5-hqZ"/>
+                    <constraint firstAttribute="trailing" secondItem="M5O-MS-f3F" secondAttribute="trailing" constant="20" id="4dJ-5u-W8U"/>
+                    <constraint firstItem="f86-iR-jRV" firstAttribute="leading" secondItem="PsH-FD-eKc" secondAttribute="leading" id="6HZ-FO-Yqy"/>
+                    <constraint firstItem="PsH-FD-eKc" firstAttribute="top" secondItem="2oZ-mr-HDQ" secondAttribute="bottom" constant="2" id="9Bz-EA-h3l"/>
+                    <constraint firstItem="PsH-FD-eKc" firstAttribute="leading" secondItem="2oZ-mr-HDQ" secondAttribute="leading" id="ME1-3k-b1v"/>
+                    <constraint firstItem="f86-iR-jRV" firstAttribute="top" secondItem="PsH-FD-eKc" secondAttribute="bottom" constant="4" id="S5A-R3-TEu"/>
+                    <constraint firstAttribute="trailing" secondItem="lVY-vH-9WC" secondAttribute="trailing" constant="20" id="Vf8-l6-GnJ"/>
+                    <constraint firstItem="I8h-yh-cfV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YrD-LQ-XpV"/>
+                    <constraint firstItem="I8h-yh-cfV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZMu-hM-HYY"/>
+                    <constraint firstItem="2oZ-mr-HDQ" firstAttribute="top" secondItem="I8h-yh-cfV" secondAttribute="top" id="aM8-oc-jo8"/>
+                    <constraint firstItem="2oZ-mr-HDQ" firstAttribute="leading" secondItem="I8h-yh-cfV" secondAttribute="trailing" constant="13" id="cwk-yZ-Bi5"/>
+                    <constraint firstItem="lVY-vH-9WC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uwL-55-9m7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="M5O-MS-f3F" id="dN4-Dt-JeB"/>
+                <outlet property="firstImageView" destination="lVY-vH-9WC" id="Sxq-dm-97Z"/>
+                <outlet property="nickNameLabel" destination="2oZ-mr-HDQ" id="hK5-Ss-IJZ"/>
+                <outlet property="timeLabel" destination="f86-iR-jRV" id="Qcg-kq-gq6"/>
+                <outlet property="userButton" destination="I8h-yh-cfV" id="dLu-BO-Nmu"/>
+            </connections>
+            <point key="canvasLocation" x="75" y="66.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like_red" width="20" height="20"/>
+        <image name="user_portrait_default" width="88" height="88"/>
+    </resources>
+</document>

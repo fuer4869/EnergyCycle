@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ETShareTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="同步分享到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38n-wh-I8e">
+                        <rect key="frame" x="25" y="14" width="66.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.32941176470588235" green="0.32941176470588235" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVn-O8-StF">
+                        <rect key="frame" x="101.5" y="4" width="36" height="36"/>
+                        <state key="normal" image="share_timeline_unselected"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-Sr-h21">
+                        <rect key="frame" x="144.5" y="4" width="36" height="36"/>
+                        <state key="normal" image="share_wechat_unselected"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVf-G7-EuB">
+                        <rect key="frame" x="187.5" y="4" width="36" height="36"/>
+                        <state key="normal" image="share_weibo_unselected"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lOR-y3-RHg">
+                        <rect key="frame" x="230.5" y="4" width="36" height="36"/>
+                        <state key="normal" image="share_qq_unselected"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfa-D0-QNj">
+                        <rect key="frame" x="273.5" y="4" width="36" height="36"/>
+                        <state key="normal" image="share_qzone_unselected"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XVn-O8-StF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="436-5x-3t1"/>
+                    <constraint firstItem="lOR-y3-RHg" firstAttribute="centerY" secondItem="lVf-G7-EuB" secondAttribute="centerY" id="ALK-gR-a0Q"/>
+                    <constraint firstItem="Cfa-D0-QNj" firstAttribute="leading" secondItem="lOR-y3-RHg" secondAttribute="trailing" constant="7" id="J5t-61-e95"/>
+                    <constraint firstItem="lVf-G7-EuB" firstAttribute="leading" secondItem="lFe-Sr-h21" secondAttribute="trailing" constant="7" id="MGK-s6-T3L"/>
+                    <constraint firstItem="Cfa-D0-QNj" firstAttribute="centerY" secondItem="lOR-y3-RHg" secondAttribute="centerY" id="R5T-hK-Inr"/>
+                    <constraint firstItem="lOR-y3-RHg" firstAttribute="leading" secondItem="lVf-G7-EuB" secondAttribute="trailing" constant="7" id="SEH-Hn-Uhq"/>
+                    <constraint firstItem="lVf-G7-EuB" firstAttribute="centerY" secondItem="lFe-Sr-h21" secondAttribute="centerY" id="cRl-HB-BVN"/>
+                    <constraint firstItem="XVn-O8-StF" firstAttribute="leading" secondItem="38n-wh-I8e" secondAttribute="trailing" constant="10" id="f8r-9T-Rxs"/>
+                    <constraint firstItem="lFe-Sr-h21" firstAttribute="leading" secondItem="XVn-O8-StF" secondAttribute="trailing" constant="7" id="lH5-p0-f9U"/>
+                    <constraint firstItem="38n-wh-I8e" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="plF-wL-yt7"/>
+                    <constraint firstItem="38n-wh-I8e" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="rN7-tg-dGn"/>
+                    <constraint firstItem="lFe-Sr-h21" firstAttribute="centerY" secondItem="XVn-O8-StF" secondAttribute="centerY" id="rul-Tx-g1w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="qq" destination="lOR-y3-RHg" id="ZYg-Zw-nSQ"/>
+                <outlet property="qzone" destination="Cfa-D0-QNj" id="XTC-xc-peZ"/>
+                <outlet property="shareLabel" destination="38n-wh-I8e" id="6Dr-ht-e2T"/>
+                <outlet property="timeline" destination="XVn-O8-StF" id="385-mL-p5K"/>
+                <outlet property="wechat" destination="lFe-Sr-h21" id="dpw-nn-twd"/>
+                <outlet property="weibo" destination="lVf-G7-EuB" id="eQe-HM-HNy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="share_qq_unselected" width="36" height="36"/>
+        <image name="share_qzone_unselected" width="36" height="36"/>
+        <image name="share_timeline_unselected" width="36" height="36"/>
+        <image name="share_wechat_unselected" width="36" height="36"/>
+        <image name="share_weibo_unselected" width="36" height="36"/>
+    </resources>
+</document>

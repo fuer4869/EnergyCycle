@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ETRadioCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="40" height="72"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="40" height="72"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IKI-VG-hZa">
+                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="jne-7U-Sxk"/>
+                            <constraint firstAttribute="width" constant="40" id="s0l-s3-4Gr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio Australia" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p6C-tj-PuS">
+                        <rect key="frame" x="0.0" y="48" width="40" height="21.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="GC8-5B-0dr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p6C-tj-PuS" secondAttribute="bottom" id="9xP-1t-mli"/>
+                <constraint firstItem="IKI-VG-hZa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Nac-h4-7ZZ"/>
+                <constraint firstItem="IKI-VG-hZa" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="PQ4-FP-boJ"/>
+                <constraint firstItem="p6C-tj-PuS" firstAttribute="top" secondItem="IKI-VG-hZa" secondAttribute="bottom" constant="8" id="nwe-ea-QrR"/>
+                <constraint firstItem="p6C-tj-PuS" firstAttribute="centerX" secondItem="IKI-VG-hZa" secondAttribute="centerX" id="tQ4-Gy-xEz"/>
+            </constraints>
+            <size key="customSize" width="137" height="72"/>
+            <connections>
+                <outlet property="radioIcon" destination="IKI-VG-hZa" id="4Uo-IC-qqo"/>
+                <outlet property="radioName" destination="p6C-tj-PuS" id="rRB-uR-oJk"/>
+            </connections>
+            <point key="canvasLocation" x="77" y="65"/>
+        </collectionViewCell>
+    </objects>
+</document>
